@@ -55,6 +55,81 @@ header {
 
 /* Fin header */
 
+/* ************************ */
+/* Inicio main */
+
+.answer .contenedor__texto {
+    margin-top: 20px;
+}
+
+.answer .input__area {
+    margin-bottom: 20px;
+}
+
+.answer .input__area textarea {
+    padding: 18px;
+    width: 100%;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 20px;
+    color: var(--negro-medio);
+    border: none;
+    resize: none
+}
+
+.answer .input__area textarea:focus {
+    outline: none;
+}
+
+.answer .alerta {
+    text-align: center;
+    border-top: thin solid lightgrey;
+    padding: 10px;
+}
+
+.answer .alerta p {
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* < Botones > */
+.actions {
+    padding-bottom: 20px;
+}
+
+.actions .button__submit {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.actions .button__submit button {
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--patua-one);
+    border-radius: 8px;
+    width: 150px;
+    color: var(--blanco);
+    letter-spacing: 0.3px;
+    box-shadow: 1px 1px 1px -1px rgb(0 0 0 / 75%);
+}
+
+.actions .button__submit button:hover {
+    cursor: pointer;
+}
+
+.actions .button__submit button#encriptar {
+    background-color: var(--azul);
+}
+
+.actions .button__submit button#desencriptar {
+    background-color: var(--celeste);
+}
+/* Fin main */
+
+/* ************************ */
+/* Inicio footer */
+
 footer {
     background-color: var(--azul);
 }
@@ -65,7 +140,7 @@ footer {
 }
 
 .contenedor__logo .logo {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding: 10px;
 }
@@ -77,40 +152,44 @@ footer {
 }
 
 .contenedor__info {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
-.contenedor__info ul {
-    border-bottom: thin solid var(--gris);
+.titulo__info {
+    text-align: center;
+    margin-top: 15px;
 }
 
-.contenedor__info ul li {
-    border-top: thin solid var(--gris);
-    display: flex;
-    padding: 12px 20px;
-}
-
-.contenedor__info ul li .titulo__info {
-    width: 70%;
-}
-
-.contenedor__info ul li .titulo__info p {
-    font-size: 16px;
+.info__header {
     color: var(--blanco);
-    font-family: var(--open-sans);
 }
 
-.contenedor__info ul li .deplegable {
-    width: 30%;
-    font-size: 14px;
+.info__header p {
+    padding: 10px 0px;
+}
+
+.icons {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social__icons {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: flex-end;
+    padding: 5px 0px;
 }
 
-.contenedor__info ul li .deplegable i {
-    font-size: 20px;
-    color: var(--blanco);
+.social__icons a {
+    color: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icons a i {
+    font-size: 24px;
 }
 
 .contenedor__copy {
@@ -123,8 +202,5 @@ footer {
     color: var(--blanco);
     font-size: 10px;
 }
-
-/* Inicio footer */
-
 
 /* Fin footer */

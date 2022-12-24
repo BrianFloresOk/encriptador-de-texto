@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/images/logo_alura2.svg" type="image/x-icon">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../public/css/index-style.css">
 </head>
+
 <body>
     <header>
         <div class="contenedor__header">
@@ -23,7 +28,21 @@
     </header>
 
     <main>
+        <section class="answer">
+            <div class="contenedor__texto">
+                <div class="input__area">
+                    <textarea name="textarea" id="textarea" cols="1" rows="5" placeholder="Ingrese el texto aquí..." value="" autofocus></textarea>
+                </div>
+                <div class="alerta"><p>Solo en letras minúsculas sin caracteres especiales</p></div>
+            </div>
+            <div class="actions">
+                <div class="button__submit"><button id="encriptar">Encriptar</button></div>
+                <div class="button__submit"><button id="desencriptar">Desencriptar</button></div>
+            </div>
+        </section>
+        <section class="ask">
 
+        </section>
     </main>
 
     <footer>
@@ -34,16 +53,30 @@
                 </div>
             </div>
             <div class="contenedor__info">
-                <ul>
-                    <li>
-                        <div class="titulo__info"><p>Nuestras redes</p></div>
-                        <div class="deplegable"><i class="fa-solid fa-chevron-up"></i></div>
-                    </li>
-                    <li>
-                        <div class="titulo__info"><p>Sobre mí</p></div>
-                        <div class="deplegable"><i class="fa-solid fa-chevron-up"></i></div>
-                    </li>
-                </ul>
+                <div class="titulo__info">
+                    <div class="info__header">
+                        <p>Nuestras redes</p>
+                    </div>
+                    <div class="icons">
+                        <div class="social__icons">
+                            <a href="https://www.youtube.com/channel/UCAy2irhcjZsOv1sWojOm_XQ/featured"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/aluracursoslatam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/aluralatam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/alura-latam/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo__info">
+                    <div class="info__header">
+                        <p>Sobre mí</p>
+                    </div>
+                    <div class="icons">
+                        <div class="social__icons">
+                            <a href="https://github.com/BrianFloresOk" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/brianflores-ok/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contenedor__copy">
                 <p>&copy Copyright Alura Latam</p>
@@ -51,4 +84,5 @@
         </div>
     </footer>
 </body>
+
 </html>
