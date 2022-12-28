@@ -28,54 +28,74 @@
     </header>
 
     <main>
-        <section class="answer">
-            <div class="contenedor__texto">
-                <div class="input__area">
-                    <textarea name="textarea" id="textarea" cols="1" rows="5" placeholder="Ingrese el texto aquí..." value="" autofocus></textarea>
+        <div class="contenido">
+            <section class="answer">
+                <div class="contenedor__texto">
+                    <div class="input__area">
+                        <textarea name="textarea" id="textarea" cols="1" rows="5" placeholder="Ingrese el texto aquí..." value="" autofocus></textarea>
+                    </div>
+                    <div class="alerta"><p>Solo en letras minúsculas sin caracteres especiales</p></div>
                 </div>
-                <div class="alerta"><p>Solo en letras minúsculas sin caracteres especiales</p></div>
-            </div>
-            <div class="actions">
-                <div class="button__submit"><button id="encriptar">Encriptar</button></div>
-                <div class="button__submit"><button id="desencriptar">Desencriptar</button></div>
-            </div>
-        </section>
-        <section class="ask">
-
-        </section>
+                <div class="actions">
+                    <div class="button__submit"><button id="encriptar">Encriptar</button></div>
+                    <div class="button__submit"><button id="desencriptar">Desencriptar</button></div>
+                </div>
+            </section>
+            <section class="ask">
+                <div class="resultado">
+                    <div class="resultado__inexistente">
+                        <div class="lupa">
+                            <img src="../public/images/lupa.svg" alt="lupa">
+                        </div>
+                        <div class="resultado__imagen">
+                            <img src="../public/images/fondo-resultado.png" alt="fondo-resultado">
+                        </div>
+                        <div class="mensaje__resultado">
+                            <p>No hay resultados</p>
+                        </div>
+                    </div>
+                    <div id="resultado__ok"></div>
+                </div>
+                <div class="alerta">
+                    <p>Ingrese el texto o palabra nuevamente</p>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
         <div class="contenedor__footer">
-            <div class="contenedor__logo">
-                <div class="logo">
-                    <img src="../public/images/logo_oracleAlura.svg" alt="alura-oracle">
-                </div>
-            </div>
-            <div class="contenedor__info">
-                <div class="titulo__info">
-                    <div class="info__header">
-                        <p>Nuestras redes</p>
-                    </div>
-                    <div class="icons">
-                        <div class="social__icons">
-                            <a href="https://www.youtube.com/channel/UCAy2irhcjZsOv1sWojOm_XQ/featured"target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/aluracursoslatam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.instagram.com/aluralatam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/alura-latam/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
+            <div class="info__seccion">
+                <div class="contenedor__logo">
+                    <div class="logo">
+                        <img src="../public/images/logo_oracleAlura.svg" alt="alura-oracle">
                     </div>
                 </div>
-                <div class="titulo__info">
-                    <div class="info__header">
-                        <p>Sobre mí</p>
-                    </div>
-                    <div class="icons">
-                        <div class="social__icons">
-                            <a href="https://github.com/BrianFloresOk" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/brianflores-ok/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="contenedor__info">
+                    <article class="titulo__info">
+                        <div class="info__header">
+                            <p>Nuestras redes</p>
                         </div>
-                    </div>
+                        <div class="icons">
+                            <div class="social__icons">
+                                <a href="https://www.youtube.com/channel/UCAy2irhcjZsOv1sWojOm_XQ/featured"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/aluracursoslatam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/aluralatam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/alura-latam/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="titulo__info">
+                        <div class="info__header">
+                            <p>Sobre mí</p>
+                        </div>
+                        <div class="icons">
+                            <div class="social__icons">
+                                <a href="https://github.com/BrianFloresOk" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/brianflores-ok/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
             <div class="contenedor__copy">

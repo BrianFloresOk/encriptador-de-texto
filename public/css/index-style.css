@@ -125,6 +125,45 @@ header {
 .actions .button__submit button#desencriptar {
     background-color: var(--celeste);
 }
+
+.ask {
+    padding: 70px 20px;
+    margin-top: 10px;
+    border-top: thin solid lightgrey;
+}
+
+.ask .resultado {
+    padding: 20px 0px
+}
+
+.ask .resultado__inexistente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ask .resultado__inexistente .resultado__imagen {
+    display: none;
+}
+
+.ask .resultado__inexistente .lupa {
+    margin-right: 10px;
+}
+
+.ask .resultado__inexistente .mensaje__resultado p {
+    font-size: 20px;
+}
+
+.ask .alerta {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.ask .alerta p {
+    font-size: 15px;
+}
+
+
 /* Fin main */
 
 /* ************************ */
@@ -204,3 +243,98 @@ footer {
 }
 
 /* Fin footer */
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .actions {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .actions .button__submit {
+        padding: 0px;
+    }
+
+    footer .info__seccion {
+        display: flex;
+        width: 100%;
+        padding: 50px 10px;
+    }
+
+    footer .info__seccion .contenedor__logo {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    footer .info__seccion .contenedor__info {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .info__seccion .contenedor__info .icons {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    .contenido {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contenido .answer,
+    .contenido .ask {
+        width: 50%;
+    }
+
+    .contenido .answer .contenedor__texto {
+        height: 75%;
+    }
+
+    .contenido .answer .contenedor__texto .input__area {
+        height: 90%;
+    }
+
+    .answer .input__area textarea {
+        height: 100%;
+    }
+
+    .contenido .answer .contenedor__texto .alerta {
+        height: 10%;
+    }
+
+    .contenido .answer .actions {
+        height: 25%;
+        width: 70%;
+    }
+
+    .ask .resultado__inexistente {
+        display: block;
+        text-align: center;
+    }
+
+    .ask .resultado__inexistente .lupa {
+        display: none;
+    }
+
+    .contenido .ask .resultado__imagen {
+        display: block;
+    }
+
+    .contenido .ask .resultado__imagen img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
