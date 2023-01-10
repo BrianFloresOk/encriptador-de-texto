@@ -291,15 +291,26 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+        height: 500px;
     }
 
     .contenido .answer,
     .contenido .ask {
         width: 50%;
+        border-top: none;
+        padding: 34px 20px 20px;
+    }
+
+    .ask {
+        border-left: thin solid lightgrey;
     }
 
     .contenido .answer .contenedor__texto {
         height: 75%;
+    }
+
+    .answer .input__area textarea {
+        padding: 40px 10px 15px;
     }
 
     .contenido .answer .contenedor__texto .input__area {
