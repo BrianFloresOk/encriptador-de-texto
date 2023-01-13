@@ -47,7 +47,13 @@ window.addEventListener('load', () => {
     }
 
     const desencriptar = () => {
-
+        let textoAEncriptar = texto.value.toLowerCase();
+        textoAEncriptar = textoAEncriptar.replace(/enter/i, "e");
+        textoAEncriptar = textoAEncriptar.replace(/imes/i, "i");
+        textoAEncriptar = textoAEncriptar.replace(/ober/i, "o");
+        textoAEncriptar = textoAEncriptar.replace(/ai/i, "a");
+        textoAEncriptar = textoAEncriptar.replace(/ufat/i, "u");
+        mostrarResultado(textoAEncriptar)
     }
 
     botonEncriptar.addEventListener("click", () => {
@@ -59,7 +65,11 @@ window.addEventListener('load', () => {
     })
 
     botonDesencriptar.addEventListener("click", () => {
-        
+        if(texto.value !== "") {
+            desencriptar()
+        } else {
+            alert("Ingrese un texto")
+        }
     })
 
 })
