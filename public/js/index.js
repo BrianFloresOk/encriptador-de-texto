@@ -1,8 +1,8 @@
-function qs (etiqueta) {
+function qs(etiqueta) {
     return document.querySelector(etiqueta)
 }
 
-function qsAll (etiqueta) {
+function qsAll(etiqueta) {
     return document.querySelectorAll(etiqueta)
 }
 
@@ -22,7 +22,9 @@ window.addEventListener('load', () => {
     let resultadoTexto = qs(".resultado__inexistente")
     let alerta = qs("#alerta");
     let contenedorResultado = qs("#resultado__ok")
-
+    let contenedorCopiar = qs(".contenedor__copiar")
+    let textoResultado = qs("#texto")
+    let botonCopiar = qs("#copy")
 
 
     console.log(texto);
@@ -33,7 +35,11 @@ window.addEventListener('load', () => {
     const mostrarResultado = (texto) => {
         resultadoTexto.style.display = "none";
         alerta.style.display = "none";
+        textoResultado.style.display = "block"
         contenedorResultado.innerHTML = texto
+        contenedorCopiar.classList.add("texto__resultado")
+        contenedorResultado.classList.add("texto__p")
+        contenedorCopiar.style.display = "block"
     }
 
     const encriptar = () => {
@@ -56,8 +62,16 @@ window.addEventListener('load', () => {
         mostrarResultado(textoAEncriptar)
     }
 
+
+    const copiar = (str) => {
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+            return navigator.clipboard.writeText(str)
+        }
+        return Promise.reject("The Clipboard API is not available.");
+    };
+
     botonEncriptar.addEventListener("click", () => {
-        if(texto.value !== "") {
+        if (texto.value !== "") {
             encriptar()
         } else {
             alert("Ingrese un texto")
@@ -65,11 +79,15 @@ window.addEventListener('load', () => {
     })
 
     botonDesencriptar.addEventListener("click", () => {
-        if(texto.value !== "") {
+        if (texto.value !== "") {
             desencriptar()
         } else {
             alert("Ingrese un texto")
         }
+    })
+
+    botonCopiar.addEventListener('click', () => {
+        copiar(contenedorResultado.value)
     })
 
 })

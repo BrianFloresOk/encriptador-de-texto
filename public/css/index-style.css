@@ -133,7 +133,8 @@ header {
 }
 
 .ask .resultado {
-    padding: 20px 0px
+    padding: 20px 0px;
+    height: 85%;
 }
 
 .ask .resultado__inexistente {
@@ -161,6 +162,38 @@ header {
 
 .ask .alerta p {
     font-size: 15px;
+}
+
+.ask #texto {
+    display: none;
+    height: 200px;
+}
+
+.ask .contenedor__copiar {
+    display: none;
+    height: 15%;
+    margin-top: 70px;
+}
+
+.ask .contenedor__boton {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ask .copiar {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--patua-one);
+    color: var(--azul);
+    background-color: var(--blanco);
+    border: thin solid var(--azul);
+    cursor: pointer;
 }
 
 
@@ -348,4 +381,33 @@ footer {
         height: 80%;
         object-fit: contain;
     }
+
+    .ask .contenedor__copiar {
+        margin: 0px;
+    }
+
+    .ask #texto {
+        height: 100%;
+    }
+}
+
+/* Clases para añadir con JS */
+
+.texto__resultado {
+    height: 100%;
+}
+
+.texto__p {
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.texto__p:focus {
+    outline: none;
 }
