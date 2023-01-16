@@ -44,21 +44,21 @@ window.addEventListener('load', () => {
 
     const encriptar = () => {
         let textoAEncriptar = texto.value.toLowerCase();
-        textoAEncriptar = textoAEncriptar.replace(/e/i, "enter");
-        textoAEncriptar = textoAEncriptar.replace(/i/i, "imes");
-        textoAEncriptar = textoAEncriptar.replace(/o/i, "ober");
-        textoAEncriptar = textoAEncriptar.replace(/a/i, "ai");
-        textoAEncriptar = textoAEncriptar.replace(/u/i, "ufat");
+        textoAEncriptar = textoAEncriptar.replace(/e/img, "enter");
+        textoAEncriptar = textoAEncriptar.replace(/o/img, "ober");
+        textoAEncriptar = textoAEncriptar.replace(/i/img, "imes");
+        textoAEncriptar = textoAEncriptar.replace(/a/img, "ai");
+        textoAEncriptar = textoAEncriptar.replace(/u/img, "ufat");
         mostrarResultado(textoAEncriptar)
     }
 
     const desencriptar = () => {
         let textoAEncriptar = texto.value.toLowerCase();
-        textoAEncriptar = textoAEncriptar.replace(/enter/i, "e");
-        textoAEncriptar = textoAEncriptar.replace(/imes/i, "i");
-        textoAEncriptar = textoAEncriptar.replace(/ober/i, "o");
-        textoAEncriptar = textoAEncriptar.replace(/ai/i, "a");
-        textoAEncriptar = textoAEncriptar.replace(/ufat/i, "u");
+        textoAEncriptar = textoAEncriptar.replace(/enter/img, "e");
+        textoAEncriptar = textoAEncriptar.replace(/ober/img, "o");
+        textoAEncriptar = textoAEncriptar.replace(/imes/img, "i");
+        textoAEncriptar = textoAEncriptar.replace(/ai/img, "a");
+        textoAEncriptar = textoAEncriptar.replace(/ufat/img, "u");
         mostrarResultado(textoAEncriptar)
     }
 
